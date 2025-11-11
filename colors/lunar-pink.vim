@@ -72,6 +72,7 @@ let s:hex.color16="#09e4e6"
 let s:hex.color17="#e09ece"
 let s:hex.color18="#05a6a8"
 let s:hex.color19="#df6cbe"
+let s:hex.color20="#ffd700"
 
 let s:bit.color10="30"
 let s:bit.color17="37"
@@ -92,6 +93,7 @@ let s:bit.color3="238"
 let s:bit.color6="240"
 let s:bit.color1="253"
 let s:bit.color13="254"
+let s:bit.color20="220"
 
 
 " ==========> General highlights 
@@ -119,11 +121,13 @@ call s:h("Special", "", s:hex.color16, "", s:bit.color15, "none")
 call s:h("Identifier", "", s:hex.color17, "", s:bit.color16, "none")
 call s:h("Function", "", s:hex.color18, "", s:bit.color17, "none")
 call s:h("Statement", "", s:hex.color2, "", s:bit.color2, "none")
-call s:h("Operator", "", s:hex.color1, "", s:bit.color1, "none")
+call s:h("Operator", "", s:hex.color16, "", s:bit.color15, "none")
 call s:h("PreProc", "", s:hex.color2, "", s:bit.color2, "none")
-call s:h("Type", "", s:hex.color2, "", s:bit.color2, "none")
+call s:h("Type", "", s:hex.color16, "", s:bit.color15, "none")
 call s:h("String", "", s:hex.color19, "", s:bit.color18, "none")
 call s:h("Number", "", s:hex.color16, "", s:bit.color15, "none")
+call s:h("Delimiter", "", s:hex.color20, "", s:bit.color20, "none")
+call s:h("@variable", "", s:hex.color17, "", s:bit.color16, "none")
 
 highlight link cStatement Statement
 highlight link cSpecial Special
